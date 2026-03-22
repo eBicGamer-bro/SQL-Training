@@ -1,0 +1,1 @@
+Select name as Customers from Customers where not Exists (Select 1 from orders where Customers.id = Orders.CustomerID)
